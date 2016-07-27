@@ -1,0 +1,18 @@
+.container {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.home {
+	@include outer-container();
+}
+
+.bio-copy {
+	@include outer-container();
+
+	article {
+		@include span-columns(6);
+		@include omega;
+	}
+}
