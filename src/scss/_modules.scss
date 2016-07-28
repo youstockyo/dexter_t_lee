@@ -1,0 +1,18 @@
+.press__box--overlay {
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	@include pad(2.3rem);
+	position: relative;
+	@include transition(opacity 0.5s ease-in 0s)
+}
+
+.press__box--overlay:hover {
+	opacity: 1;
+}
+
+.press__source {
+	position: absolute;
+	bottom: 0;
+}
