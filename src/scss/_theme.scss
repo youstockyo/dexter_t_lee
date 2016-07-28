@@ -4,6 +4,33 @@
 	color: $lakemont-green;
 }
 
+.press__h1 {
+	color: $white;
+	text-align: center;
+}
+
+.press__love {
+	@extend .press__h1;
+	text-transform: uppercase;
+}
+
+.press__quote {
+	color: $white;
+	font-size: 4.5rem;
+	font-weight: 200;
+	line-height: 4.7rem;
+	text-transform: uppercase;
+}
+
+.press__source {
+	color: $white;
+	font-weight: 200;
+}
+
+.press__source--ital {
+	font-style: italic;
+}
+
 // Shared
 // --------------------------
 .container__skew {
@@ -40,6 +67,40 @@
 	transform: skewX(12deg);
 	margin-left: -50%;
 }
+
+.press__box {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&--first {
+		background-color: $lakemont-tan;
+	}
+	&--kelly {
+		background-image: url("/images/press--kelly.jpg");
+	}
+	&--janet {
+		background-image: url("/images/press--janet.jpg");
+	}
+	&--mc {
+		background-image: url("/images/press--mc.jpg");
+	}
+	&--joyce {
+		background-image: url("/images/press--joyce.jpg");
+	}
+	&--desmond {
+		background-image: url("/images/press--desmond.jpg");
+	}
+}
+
+.press__box--overlay-blue {
+	background-color: rgba($lakemont-blue, 0.65);
+}
+
+.press__box--overlay-green {
+	background-color: rgba($lakemont-green, 0.65);
+}
+
+
 
 
 // Section Specific
