@@ -1,60 +1,12 @@
-// Colors
-// --------------------------
-$lakemont-blue: #3399cc;
-$lakemont-green: #28af63;
-$lakemont-tan: #cdb99c;
-$grey: #ccc;
-$white: #fff;
-
-
-
-// Typography
-// --------------------------
-html {
-	font-size: 62.5%;  //For easier rem calculations
-}
-body {
-	font-family: "Open Sans", "Helvetica", sans-serif;
-	font-size: 1.8rem;
-	font-weight: 400;
-	line-height: 3.3rem;
-}
-
-h1, h2, h3, h4 {
-	font-family: "Oswald", sans-serif;
-	font-weight: 600;
-}
-
-h1 {
-	font-size: 6.1rem;
-	line-height: 6.6rem;
-	margin-top: 3.3rem;
-	margin-bottom: 0;
-}
-
-p, ul, ol, pre, table, blockquote {
-	margin-top: 0;
-	margin-bottom: 3.3rem;
-}
-
-
-
 // Typography: Sections
 // --------------------------
-.bio {
-	h1 {
-		color: $lakemont-green;
-	}
+.bio__h1 {
+	color: $lakemont-green;
 }
-
 
 // Shared
 // --------------------------
-body {
-	background: $white;
-}
-
-.skew-wrapper {
+.container__skew {
 	background: $white;
 	transform: skewX(-12deg);
 	height: 100vh;
@@ -67,11 +19,11 @@ body {
 
 // Images
 // --------------------------
-.home-container {
+.home {
 	background: url("/images/dtl-home.jpg") no-repeat center/cover;
 }
 
-.bio-image-wrapper {
+.bio__bgimage-wrapper {
 	transform: skewX(-12deg);
 	width: 50%;
 	position:absolute;
@@ -80,7 +32,7 @@ body {
 	z-index: -2;
 }
 
-.bio-image {
+.bio__bgimage {
 	background: url("/images/dtl-bio.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;

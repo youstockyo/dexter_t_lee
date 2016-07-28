@@ -1,0 +1,45 @@
+// Colors
+// --------------------------
+$lakemont-blue: #3399cc;
+$lakemont-green: #28af63;
+$lakemont-tan: #cdb99c;
+$grey: #ccc;
+$white: #fff;
+
+
+// Base Typography
+// --------------------------
+html {
+	font-size: 62.5%;  //For easier rem calculations
+}
+
+body {
+	font-family: "Open Sans", "Helvetica", sans-serif;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 3.3rem;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 6.1rem;
+	line-height: 6.6rem;
+	margin-top: 3.3rem;
+	margin-bottom: 0;
+}
+
+p, ul, ol, pre, table, blockquote {
+	margin-top: 0;
+	margin-bottom: 3.3rem;
+}
+
+// Base Styles
+// --------------------------
+body {
+	background: $white;
+}
+

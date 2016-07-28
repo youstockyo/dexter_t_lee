@@ -423,13 +423,13 @@ p, ul, ol, pre, table, blockquote {
   margin-top: 0;
   margin-bottom: 3.3rem; }
 
-.bio h1 {
-  color: #28af63; }
-
 body {
   background: #fff; }
 
-.skew-wrapper {
+.bio__h1 {
+  color: #28af63; }
+
+.container__skew {
   background: #fff;
   -webkit-transform: skewX(-12deg);
           transform: skewX(-12deg);
@@ -439,10 +439,10 @@ body {
   position: absolute;
   top: 0; }
 
-.home-container {
+.home {
   background: url("/images/dtl-home.jpg") no-repeat center/cover; }
 
-.bio-image-wrapper {
+.bio__bgimage-wrapper {
   -webkit-transform: skewX(-12deg);
           transform: skewX(-12deg);
   width: 50%;
@@ -451,7 +451,7 @@ body {
   right: 0;
   z-index: -2; }
 
-.bio-image {
+.bio__bgimage {
   background: url("/images/dtl-bio.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -465,28 +465,28 @@ body {
   overflow: hidden;
   position: relative; }
 
-.home {
+.container__content {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto; }
-  .home::after {
+  .container__content::after {
     clear: both;
     content: "";
     display: table; }
 
-.bio-copy {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto; }
-  .bio-copy::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .bio-copy article {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+.bio__article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0; }
+  .bio__article:last-child {
     margin-right: 0; }
-    .bio-copy article:last-child {
-      margin-right: 0; }
+
+.bio__copy--short {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 82.52847%; }
+  .bio__copy--short:last-child {
+    margin-right: 0; }

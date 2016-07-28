@@ -4,15 +4,15 @@
 	position: relative;
 }
 
-.home {
+.container__content {
 	@include outer-container();
 }
 
-.bio-copy {
-	@include outer-container();
+.bio__article {
+	@include span-columns(6);
+	@include omega;
+}
 
-	article {
-		@include span-columns(6);
-		@include omega;
-	}
+.bio__copy--short {
+	@include span-columns(5 of 6);
 }
