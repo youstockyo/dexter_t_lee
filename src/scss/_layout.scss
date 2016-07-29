@@ -61,3 +61,12 @@
 .tour__date {
 	width: 7rem;
 }
+
+.contact__content {
+	@include span-columns(5);
+	@include shift(7);
+}
+
+.contact__form {
+	@include span-columns(4 of 5);
+}

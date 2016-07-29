@@ -512,6 +512,23 @@ body {
 .tour__date {
   width: 7rem; }
 
+.contact__content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-left: 59.70863%; }
+  .contact__content:last-child {
+    margin-right: 0; }
+
+.contact__form {
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 78.8297%; }
+  .contact__form:last-child {
+    margin-right: 0; }
+
 .bio__h1 {
   color: #28af63; }
 
@@ -546,7 +563,7 @@ body {
 .tour__location {
   font-style: italic; }
 
-.container__skew {
+.container__skew, .container__skew--contact {
   background: #fff;
   -webkit-transform: skewX(-12deg);
           transform: skewX(-12deg);
@@ -599,6 +616,21 @@ body {
 
 .press__box--overlay-green {
   background-color: rgba(40, 175, 99, 0.65); }
+
+.container__skew--contact {
+  right: 0; }
+
+.contact__bgimage {
+  background: url("/images/contact--lookingup.jpg") no-repeat;
+  background-size: cover;
+  background-position: left;
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  margin-left: -10%; }
 
 .press__box--overlay {
   opacity: 0;

@@ -56,7 +56,6 @@
 	top: 0;
 }
 
-
 // Images
 // --------------------------
 .home {
@@ -113,8 +112,23 @@
 	background-color: rgba($lakemont-green, 0.65);
 }
 
+.container__skew--contact {
+	@extend .container__skew;
+	right: 0;
+}
 
-
+.contact__bgimage {
+	background: url("/images/contact--lookingup.jpg") no-repeat;
+	background-size: cover;
+	background-position: left;
+	width: 70%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	margin-left: -10%;
+}
 
 // Section Specific
 // --------------------------
