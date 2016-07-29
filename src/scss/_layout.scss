@@ -1,14 +1,14 @@
 .container {
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 	border-bottom: solid 0.5px $grey;
 	box-shadow: 0 5px 15px rgba($copy-black, 0.1);
 }
 
-.container--short {
+.container--full {
 	@extend .container;
-	height: 100%;
+	height: 100vh;
 }
 
 .container__content {
@@ -37,4 +37,27 @@
 .press__box {
 	width: 33.3333%;
 	height: 29.8rem;
+}
+
+.tour {
+	padding: 8rem 0;
+}
+
+.tour__image {
+	@include span-columns(5);
+	margin-top: 6.6rem;
+}
+
+.tour__dates {
+	@include span-columns(6);
+	@include shift(1);
+}
+
+.tour__date, .tour__city, .tour__location, {
+	display: inline-block;
+	padding-right: 3rem;
+}
+
+.tour__date {
+	width: 7rem;
 }
