@@ -86,21 +86,25 @@
 	background-repeat: no-repeat;
 	&--first {
 		background-color: $lakemont-tan;
+		border-top-left-radius: 2rem;
 	}
 	&--kelly {
 		background-image: url("/images/press--kelly.jpg");
 	}
 	&--janet {
 		background-image: url("/images/press--janet.jpg");
+		border-top-right-radius: 2rem;
 	}
 	&--mc {
 		background-image: url("/images/press--mc.jpg");
+		border-bottom-left-radius: 2rem;
 	}
 	&--joyce {
 		background-image: url("/images/press--joyce.jpg");
 	}
 	&--desmond {
 		background-image: url("/images/press--desmond.jpg");
+		border-bottom-right-radius: 2rem;
 	}
 }
 
@@ -108,13 +112,32 @@
 	background-color: rgba($lakemont-blue, 0.65);
 }
 
+.press__box--overlay-blue--mc {
+	@extend .press__box--overlay-blue;
+	border-bottom-left-radius: 2rem;
+}
+
+.press__box--overlay-blue--desmond {
+	@extend .press__box--overlay-blue;
+	border-bottom-right-radius: 2rem;
+}
+
 .press__box--overlay-green {
 	background-color: rgba($lakemont-green, 0.65);
+}
+
+.press__box--overlay-green--janet {
+	@extend .press__box--overlay-green;
+	border-top-right-radius: 2rem;
 }
 
 .container__skew--contact {
 	@extend .container__skew;
 	right: 0;
+}
+
+.tour__image {
+	background: url("/images/tour--kickin.jpg") no-repeat;
 }
 
 .contact__bgimage {

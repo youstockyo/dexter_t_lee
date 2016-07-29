@@ -492,7 +492,9 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
-  margin-top: 6.6rem; }
+  height: 66rem;
+  margin-top: 6.6rem;
+  border-radius: 2rem; }
   .tour__image:last-child {
     margin-right: 0; }
 
@@ -599,26 +601,42 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
   .press__box--first {
-    background-color: #cdb99c; }
+    background-color: #cdb99c;
+    border-top-left-radius: 2rem; }
   .press__box--kelly {
     background-image: url("/images/press--kelly.jpg"); }
   .press__box--janet {
-    background-image: url("/images/press--janet.jpg"); }
+    background-image: url("/images/press--janet.jpg");
+    border-top-right-radius: 2rem; }
   .press__box--mc {
-    background-image: url("/images/press--mc.jpg"); }
+    background-image: url("/images/press--mc.jpg");
+    border-bottom-left-radius: 2rem; }
   .press__box--joyce {
     background-image: url("/images/press--joyce.jpg"); }
   .press__box--desmond {
-    background-image: url("/images/press--desmond.jpg"); }
+    background-image: url("/images/press--desmond.jpg");
+    border-bottom-right-radius: 2rem; }
 
-.press__box--overlay-blue {
+.press__box--overlay-blue, .press__box--overlay-blue--mc, .press__box--overlay-blue--desmond {
   background-color: rgba(51, 153, 204, 0.65); }
 
-.press__box--overlay-green {
+.press__box--overlay-blue--mc {
+  border-bottom-left-radius: 2rem; }
+
+.press__box--overlay-blue--desmond {
+  border-bottom-right-radius: 2rem; }
+
+.press__box--overlay-green, .press__box--overlay-green--janet {
   background-color: rgba(40, 175, 99, 0.65); }
+
+.press__box--overlay-green--janet {
+  border-top-right-radius: 2rem; }
 
 .container__skew--contact {
   right: 0; }
+
+.tour__image {
+  background: url("/images/tour--kickin.jpg") no-repeat; }
 
 .contact__bgimage {
   background: url("/images/contact--lookingup.jpg") no-repeat;

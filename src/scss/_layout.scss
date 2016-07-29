@@ -45,7 +45,9 @@
 
 .tour__image {
 	@include span-columns(5);
+	height: 66rem;
 	margin-top: 6.6rem;
+	border-radius: 2rem;
 }
 
 .tour__dates {
