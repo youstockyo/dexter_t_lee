@@ -32,6 +32,7 @@
 }
 
 .tour__h1 {
+	margin-top: 0;
 	color: $lakemont-blue;
 }
 
@@ -76,14 +77,15 @@
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
-	transform: skewX(12deg);
-	margin-left: -50%;
+	margin-left: -25%;
+	opacity: 0;
 }
 
 .press__box {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	// opacity: 0;
 	&--first {
 		background-color: $lakemont-tan;
 		border-top-left-radius: 2rem;
@@ -133,11 +135,28 @@
 
 .container__skew--contact {
 	@extend .container__skew;
-	right: 0;
+	left: 55%;
 }
 
-.tour__image {
+.tour__slide {
+	width: 100%;
+	border-radius: 2rem;
+}
+
+.tour__slide:nth-of-type(1) {
 	background: url("/images/tour--kickin.jpg") no-repeat;
+}
+
+.tour__slide:nth-of-type(2) {
+	background: url("/images/tour--hangin.jpg") no-repeat;
+}
+
+.tour__slide:nth-of-type(3) {
+	background: url("/images/tour--blue.jpg") no-repeat;
+}
+
+.tour__slide:nth-of-type(4) {
+	background: url("/images/tour--surprise.jpg") no-repeat;
 }
 
 .contact__bgimage {
@@ -150,7 +169,11 @@
 	top: 0;
 	left: 0;
 	z-index: -2;
-	margin-left: -10%;
+	margin-left: -5%;
+}
+
+.contact__form {
+	color: $lakemont-blue;
 }
 
 // Section Specific

@@ -39,31 +39,31 @@
 				<h1 class="press__h1">Press</h1>
 				<p class="press__love">Everybody ❤s Dexter</p>
 			</div>
-			<div class="press__box press__box--kelly">
+			<div class="press__box press__box--kelly has--transition">
 				<div class="press__box--overlay press__box--overlay-blue">
 					<p class="press__quote">He just keeps at it.</p>
 					<p class="press__source">Kelly Greenebooke, writer<br><span class="press__source--ital">Where the Fish Fly</span></p>
 				</div>
 			</div>
-			<div class="press__box press__box--janet">
+			<div class="press__box press__box--janet has--transition">
 				<div class="press__box--overlay press__box--overlay-green--janet">
 					<p class="press__quote">He wants to be liked.</p>
 					<p class="press__source">Janet Brooks, writer<br><span class="press__source--ital">Where the Fish Fly</span></p>
 				</div>
 			</div>
-			<div class="press__box press__box--mc">
+			<div class="press__box press__box--mc has--transition">
 				<div class="press__box--overlay press__box--overlay-blue--mc">
 					<p class="press__quote">Every rap battle, he comes in 2nd.</p>
 					<p class="press__source">MC Rocketsmith</p>
 				</div>
 			</div>
-			<div class="press__box press__box--joyce">
+			<div class="press__box press__box--joyce has--transition">
 				<div class="press__box--overlay press__box--overlay-green">
 					<p class="press__quote">At best, a solid 4.</p>
 					<p class="press__source">Joyce Stacey, editor<br><span class="press__source--ital">Where the Fish Fly</span></p>
 				</div>
 			</div>
-			<div class="press__box press__box--desmond">
+			<div class="press__box press__box--desmond has--transition">
 				<div class="press__box--overlay press__box--overlay-blue--desmond">
 					<p class="press__quote">I guess I'm proud.</p>
 					<p class="press__source">Desmond Lee, father</p>
@@ -75,6 +75,12 @@
 	<section class="container tour">
 		<div class="container__content">
 			<div class="tour__image">
+				<ul class="slideshow">
+					<li class="slideshow__slide tour__slide slideshow__slide--showing"></li>
+					<li class="slideshow__slide tour__slide"></li>
+					<li class="slideshow__slide tour__slide"></li>
+					<li class="slideshow__slide tour__slide"></li>
+				</ul>
 			</div>
 			<div class="tour__dates">
 				<h1 class="tour__h1">The 16 in '16 Tour</h1>
@@ -175,11 +181,12 @@
 		</div>
 		<div class="container__skew--contact">
 		</div>
-		<div class="contact__bgimage"></div>
+		<div class="contact__bgimage has--transition"></div>
 	</section>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="scripts/main.js"></script>
+	<script src="scripts/autoGallery.js"></script>
 	<!-- <script src="scripts/main-jq.js"></script> -->
 </body>
 </html>

@@ -1,0 +1,31 @@
+.press__box.is--inview {
+	animation-name: fadeIn;
+	animation-duration: 1.75s;
+	opacity: 1;
+}
+
+
+// Transitions
+//---------------------------
+.bio__bgimage {
+	@include transition(opacity 2s ease-out, transform 900ms ease-out);
+	@include transform(translate3d(-700rem, 0, 0) skewX(12deg));
+}
+
+.bio__bgimage.is--inview {
+	opacity: 1;
+	@include transform(translate3d(0, 0, 0) skewX(12deg));
+}
+
+.slideshow__slide {
+	@include transition(opacity 1s ease-out);
+}
+
+
+// Keyframes
+//---------------------------
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
