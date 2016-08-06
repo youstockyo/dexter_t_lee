@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		autoprefixer = require('gulp-autoprefixer'),
 		jshint = require('gulp-jshint'),
+		concat = require('gulp-concat'),
 		uglify = require('gulp-uglify'),
 		bourbon = require('node-bourbon').includePaths,
 		neat = require('node-neat').includePaths,
@@ -28,6 +29,7 @@ gulp.task('js', function() {
 	return gulp.src('src/scripts/**/*.js')
 	.pipe(jshint())
 	.pipe(jshint.reporter('jshint-stylish'))
+	.pipe(concat('main.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('build/scripts/'))
 	.pipe(browserSync.reload({
