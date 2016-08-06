@@ -8,7 +8,7 @@ var slideInterval = setInterval(nextSlide, 5000);
 // Move to next slide
 //---------------------------
 function nextSlide() {
-	slides[currentSlide].className = 'slideshow__slide tour__slide';
+	slides[currentSlide].classList.remove('slideshow__slide--showing');
 	currentSlide = (currentSlide + 1) % slides.length;
-	slides[currentSlide].className = 'slideshow__slide tour__slide slideshow__slide--showing';
+	slides[currentSlide].classList.add('slideshow__slide--showing');
 }
